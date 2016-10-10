@@ -1,6 +1,7 @@
 import React from 'react';
 import ListItem from "./ListItem";
 import Store from "../flux/Store";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 export default class List extends React.Component {
 
@@ -16,12 +17,26 @@ export default class List extends React.Component {
   render() {
     return (
       <div className="List">
-      <h1>TODOs</h1>
-        <ul>
-          {this.state.notes.map((item,ind)=>{
-              return  item == null ? "" : <ListItem note={item.note} key={ind} noteId={item.id}/>
-          })}
-        </ul>
+          <ReactCSSTransitionGroup 
+            transitionName="heading"
+            transitionAppear={true}
+            transitionAppearTimeout={500}
+          >
+          <h1>TODOs</h1>
+          </ReactCSSTransitionGroup>
+          <ul>
+          <ReactCSSTransitionGroup 
+            transitionName="chooran"
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={300}
+            transitionAppear={true}
+            transitionAppearTimeout={500}
+          >
+            {this.state.notes.map((item,ind)=>{
+                return  item == null ? "" : <ListItem note={item.note} key={ind} noteId={item.id}/>
+            })}
+        </ReactCSSTransitionGroup>
+          </ul>
       </div>
     );
   }
