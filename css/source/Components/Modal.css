@@ -1,0 +1,16 @@
+
+.Modal{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: none;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	z-index: -2;
+}
+
+.Modal-activate{
+	display: block;
+	z-index: 1;
+}

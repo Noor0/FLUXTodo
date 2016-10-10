@@ -1,0 +1,23 @@
+
+.List{
+	margin: auto;
+	width: 50%;
+	margin-top:80px;
+	padding:10px 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.List ul{
+	padding: 0px;
+	margin: 0px;
+	color: rgb(40, 40, 40);
+	list-style-type: none;
+}
+
+.List h1{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin: 0px;
+	color: rgb(40, 40, 40);
+	margin-top: 20px;
+}
