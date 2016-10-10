@@ -19,7 +19,6 @@ const Store={
 		noteToSet="";
 
 		dispatcher.register( action => {
-			console.log("received at store");
 			switch(action.type){
 				case "modal-toggle":
 					this.toggle();
