@@ -13,7 +13,6 @@ export default class Modal extends React.Component {
     };
 
     Store.addListener("modal-toggle-event",()=>{
-      console.log("in modal");
       let storedState = Store.getModalState();
       this.setState({activate:storedState});
     });

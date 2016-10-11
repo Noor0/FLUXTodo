@@ -8,7 +8,7 @@ export default class Form extends React.Component {
     let initState=Store.getUpdate();
     let note=Store.getUpdateNote();
     this.state={
-    	update:false,
+    	update:initState,
     	id:-1,
     	note
     };
