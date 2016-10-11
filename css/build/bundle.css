@@ -1,4 +1,38 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat';
+.chooran-enter{
+	opacity: 0;
+}
+
+.chooran-enter.chooran-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.chooran-leave {
+  opacity: 1;
+}
+
+.chooran-leave.chooran-leave-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+.chooran-appear{
+	opacity: 0;
+}
+
+.chooran-appear.chooran-appear-active{
+	opacity: 1;
+	transition: opacity 500ms ease-in;
+}
+
+.heading-appear{
+	opacity: 0;
+}
+
+.heading-appear.heading-appear-active{
+	opacity: 1;
+	transition: opacity 500ms ease-in;
+}@import 'https://fonts.googleapis.com/css?family=Montserrat';
 body{
 	position: absolute;
 	left: 0px;
