@@ -20,7 +20,7 @@ export default class ListItem extends React.Component {
   }
 }
 
-ListItem.defaultProps={
+ListItem.propTypes={
 	note:React.PropTypes.string.isRequired,
 	noteId:React.PropTypes.string.isRequired
 };
